@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{2379B953-3086-43D5-9A41-8BA1211E6E21}|">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HotellWeb" expanded="True">
+            <Node name="HotellWeb" expanded="True">
+              <Node name="Packages" selected="True" />
+              <Node name="App_Start" expanded="True" />
+              <Node name="Bestilling.aspx" expanded="True" />
+              <Node name="Default.aspx" expanded="True" />
+              <Node name="Site.Mobile.Master" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.HotellWeb PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hash</name>
+    </assembly>
+    <members>
+        <member name="T:HashLibrary.HashedPassword">
+            <summary>
+            A hashed password.
+            </summary>
+        </member>
+        <member name="F:HashLibrary.HashedPassword.Hash">
+            <summary>
+            The password hash.
+            </summary>
+        </member>
+        <member name="F:HashLibrary.HashedPassword.Salt">
+            <summary>
+            The password salt.
+            </summary>
+        </member>
+        <member name="M:HashLibrary.HashedPassword.#ctor(System.String,System.String)">
+            <summary>
+            Ctor.
+            </summary>
+            <param name="hash">The password hash</param>
+            <param name="salt">The password salt</param>
+        </member>
+        <member name="T:HashLibrary.Hasher">
+            <summary>
+            A password hasher.
+            </summary>
+        </member>
+        <member name="F:HashLibrary.Hasher.Encoding">
+            <summary>
+            Extended ASCII.
+            </summary>
+        </member>
+        <member name="F:HashLibrary.Hasher.HashLength">
+            <summary>
+            Length of the generated hash.
+            </summary>
+        </member>
+        <member name="F:HashLibrary.Hasher.SaltLength">
+            <summary>
+            Length of the generated salt.
+            </summary>
+        </member>
+        <member name="M:HashLibrary.Hasher.#ctor">
+            <summary>
+            Ctor.
+            </summary>
+        </member>
+        <member name="M:HashLibrary.Hasher.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Ctor.
+            </summary>
+            <param name="hashLength">Length of the generated hash</param>
+            <param name="saltLength">Length of the generated salt</param>
+        </member>
+        <member name="M:HashLibrary.Hasher.Check(System.String,HashLibrary.HashedPassword)">
+            <summary>
+            Checks if the given password hash is equal to the given hash.
+            </summary>
+            <param name="password">Password to hash</param>
+            <param name="hashed">Hash to check to</param>
+            <returns>If the given password hash is equal to the given hash</returns>
+            <exception cref="T:System.ArgumentNullException">If the given password is null</exception>
+            <exception cref="T:System.ArgumentNullException">If the given hashed password is null</exception>
+        </member>
+        <member name="M:HashLibrary.Hasher.HashPassword(System.String)">
+            <summary>
+            Salts and then hashes with PBKDF2 the given password.
+            </summary>
+            <param name="password">Password to salt then hash</param>
+            <returns>The salted and hashed password</returns>
+        </member>
+        <member name="M:HashLibrary.Hasher.HashPassword(System.String,System.Byte[])">
+            <summary>
+            Salts and then hashes with PBKDF2 the given password.
+            </summary>
+            <param name="password">Password to salt then hash</param>
+            <param name="salt">Salt to be used</param>
+            <returns>The salted and hashed password</returns>
+        </member>
+        <member name="M:HashLibrary.Hasher.GenerateSalt">
+            <summary>
+            Generates a random salt.
+            </summary>
+            <returns>The generated salt</returns>
+        </member>
+    </members>
+</doc>
